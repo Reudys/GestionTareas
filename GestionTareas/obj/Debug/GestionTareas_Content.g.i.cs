@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("view/eliminar.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("view/actualizar.png")]
 
 

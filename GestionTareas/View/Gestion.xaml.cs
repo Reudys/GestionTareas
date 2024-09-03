@@ -82,5 +82,16 @@ namespace GestionTareas.View
                 }
             }
         }
+
+        private void btnAñadir(object sender, RoutedEventArgs e)
+        {
+            Añadir form = new Añadir();
+            form.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

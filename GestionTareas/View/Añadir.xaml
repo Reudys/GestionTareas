@@ -1,0 +1,32 @@
+﻿<Window x:Class="GestionTareas.View.Añadir"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionTareas.View"
+        mc:Ignorable="d"
+        Title="Añadir" Height="350" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" KeyDown="Window_KeyDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
+            <TextBlock Text="Titulo: " Height="20"/>
+            <TextBox Height="20" Width="180"/>
+        </StackPanel>
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <TextBlock Text="Descripcion: " Height="20"/>
+            <TextBox Height="80" Width="180"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+            <Button Content="Añadir"/>
+            <Button Content="Cancelar"/>
+        </StackPanel>
+        
+    </Grid>
+</Window>

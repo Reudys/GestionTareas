@@ -1,0 +1,17 @@
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\bin\Debug\GestionTareas.exe.config
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\bin\Debug\GestionTareas.exe
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\bin\Debug\GestionTareas.pdb
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas.csproj.AssemblyReference.cache
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\MainWindow.g.cs
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\View\Gestion.g.cs
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\App.g.cs
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas_MarkupCompile.cache
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas_MarkupCompile.lref
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\MainWindow.baml
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\View\Gestion.baml
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas.g.resources
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas.Properties.Resources.resources
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas.csproj.GenerateResource.cache
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas.csproj.CoreCompileInputs.cache
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas.exe
+C:\Users\Rey\source\repos\GestionTareas\GestionTareas\obj\Debug\GestionTareas.pdb

@@ -1,0 +1,65 @@
+﻿<Window x:Class="GestionTareas.View.Gestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionTareas.View"
+        mc:Ignorable="d"
+        Title="Gestion" Height="450" Width="800"
+        WindowStyle="None"
+        MouseDown="MoverVentana"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid Background="#fbc356">
+        <!--Contenedor-->
+        <Grid Grid.Row="0" Background="#fab023">
+            <!--Barra de Arriba-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Gestor de Tareas" Foreground="#ffffff" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" Margin="8,0,0,0"/>
+            <!--Botones Salir y Minimizar-->
+            <Button Grid.Column="1" BorderThickness="0" Click="Minimizar">
+                <Button.Background>
+                    <ImageBrush ImageSource="minimizar.jpg"/>
+                </Button.Background>
+            </Button>
+
+            <Button Grid.Column="2" BorderThickness="0" Click="Cerrar">
+                <Button.Background>
+                    <ImageBrush ImageSource="salir2.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <!--Contenido de la App-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="10" VerticalAlignment="Center">
+                <Button Background="#ffffee" Width="150" Padding="5" BorderThickness="0" Margin="0,0,0,5">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="annadir.png" Width="20" Height="20"/>
+                        <TextBlock Text="Añadir" Foreground="#000000" FontSize="15" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <Button Background="#ffffee" Width="150" Padding="5" BorderThickness="0" Margin="0,0,0,5">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="eliminar.png" Width="20" Height="20"/>
+                        <TextBlock Text="Eliminar" Foreground="#000000" FontSize="15" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <DataGrid Grid.Column="1" HorizontalAlignment="Left" Height="301" Margin="66,55,0,0" VerticalAlignment="Top" Width="484" AutoGenerateColumns="True" Name="dgv"/>
+        </Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>

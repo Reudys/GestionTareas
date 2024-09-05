@@ -89,7 +89,7 @@ namespace GestionTareas.View
             form.Show();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnEliminar(object sender, RoutedEventArgs e)
         {
 
         }

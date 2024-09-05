@@ -48,13 +48,13 @@
                     </StackPanel>
                 </Button>
 
-                <Button Background="#ffffee" Width="150" Padding="5" BorderThickness="0" Margin="0,0,0,5" Click="Button_Click">
+                <Button Background="#ffffee" Width="150" Padding="5" BorderThickness="0" Margin="0,0,0,5" Click="btnEliminar">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="eliminar.png" Width="20" Height="20"/>
                         <TextBlock Text="Eliminar" Foreground="#000000" FontSize="15" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>
                     </StackPanel>
                 </Button>
-                <Button Background="#ffffee" Width="150" Padding="5" BorderThickness="0" Margin="0,0,0,5" Click="Button_Click">
+                <Button Background="#ffffee" Width="150" Padding="5" BorderThickness="0" Margin="0,0,0,5" Click="btnAñadir">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="actualizar.png" Width="20" Height="20"/>
                         <TextBlock Text="Actualizar" Foreground="#000000" FontSize="15" FontWeight="Bold" Margin="5,0,0,0" VerticalAlignment="Center"/>

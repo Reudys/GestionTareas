@@ -15,17 +15,17 @@
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
             <TextBlock Text="Titulo: " Height="20"/>
-            <TextBox Height="20" Width="180"/>
+            <TextBox Height="20" Width="180" Name="txtTitulo"/>
         </StackPanel>
         
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
             <TextBlock Text="Descripcion: " Height="20"/>
-            <TextBox Height="80" Width="180"/>
+            <TextBox Height="80" Width="180" Name="txtDescripcion"/>
         </StackPanel>
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
-            <Button Content="Añadir"/>
-            <Button Content="Cancelar"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Margin="0,0,10,0">
+            <Button Content="Añadir" Click="btnAgregar"/>
+            <Button Content="Cancelar" Click="btnCancelar"/>
         </StackPanel>
         
     </Grid>

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace GestionTareas.View
 {
@@ -19,6 +20,7 @@ namespace GestionTareas.View
     /// </summary>
     public partial class Añadir : Window
     {
+        private string cData = "Server=REUDYS; Database=Tareas; User ID=sa; Password=reyballoon";
         public Añadir()
         {
             InitializeComponent();
@@ -29,6 +31,33 @@ namespace GestionTareas.View
             if (e.Key == Key.Escape)
             {
                 this.Close();
+            }
+        }
+
+        private void btnCancelar(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAgregar(object sender, RoutedEventArgs e)
+        {
+            string query = "INSERT INTO TAREA_LIST (TITULO, DESCRIPCION) VALUES (@A1, @A2)";
+            string titulo = txtTitulo.Text;
+            string descripcion = txtDescripcion.Text;
+
+            Gestion viewGestion = new Gestion();
+
+            using (SqlConnection cnn = new SqlConnection(cData))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, cnn))
+                {
+                    cmd.Parameters.AddWithValue("@A1", titulo);
+                    cmd.Parameters.AddWithValue("@A2", descripcion);
+
+                    cnn.Open();
+                    cmd.ExecuteNonQuery();
+                    viewGestion.CargarDatos();
+                }
             }
         }
     }

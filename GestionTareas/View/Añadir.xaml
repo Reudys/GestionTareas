@@ -5,28 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionTareas.View"
         mc:Ignorable="d"
-        Title="Añadir" Height="350" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" KeyDown="Window_KeyDown">
+        Title="Añadir" Height="350" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" KeyDown="Window_KeyDown" Background="#FFFAB023">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
-            <RowDefinition Height="6*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
-            <TextBlock Text="Titulo: " Height="20"/>
-            <TextBox Height="20" Width="180" Name="txtTitulo"/>
+            <TextBlock Text="Titulo: " Height="38" FontSize="25" Width="82" Foreground="White" FontWeight="Bold"/>
+            <TextBox Height="30" Width="200" Name="txtTitulo" FontSize="18"/>
         </StackPanel>
-        
+
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
-            <TextBlock Text="Descripcion: " Height="20"/>
-            <TextBox Height="80" Width="180" Name="txtDescripcion"/>
+            <TextBlock Text="Descripcion: " Height="38" FontSize="25" Width="198" Foreground="White" FontWeight="Bold"/>
+            <TextBox Height="100" Width="199" Name="txtDescripcion" FontSize="18"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="2" Margin="0,0,10,0">
-            <Button Content="Añadir" Click="btnAgregar"/>
-            <Button Content="Cancelar" Click="btnCancelar"/>
+            <Button Content="Añadir" Click="btnAgregar" Margin="0,0,5,0" FontSize="18" FontWeight="Bold" Foreground="Black" Background="#FFFFFFEE" Width="100" Height="30" BorderThickness="0"/>
+            <Button Content="Cancelar" Click="btnCancelar" FontSize="18" FontWeight="Bold" Foreground="Black" Background="#FFFFFFEE" Width="100" Height="30" BorderThickness="0"/>
         </StackPanel>
-        
+
     </Grid>
 </Window>

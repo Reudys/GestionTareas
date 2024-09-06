@@ -21,9 +21,11 @@ namespace GestionTareas.View
     public partial class Añadir : Window
     {
         private string cData = "Server=REUDYS; Database=Tareas; User ID=sa; Password=reyballoon";
-        public Añadir()
+        private Gestion viewGestion;
+        public Añadir(Gestion gestion)
         {
             InitializeComponent();
+            this.viewGestion = gestion;
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -45,8 +47,6 @@ namespace GestionTareas.View
             string titulo = txtTitulo.Text;
             string descripcion = txtDescripcion.Text;
 
-            Gestion viewGestion = new Gestion();
-
             using (SqlConnection cnn = new SqlConnection(cData))
             {
                 using (SqlCommand cmd = new SqlCommand(query, cnn))
@@ -56,9 +56,11 @@ namespace GestionTareas.View
 
                     cnn.Open();
                     cmd.ExecuteNonQuery();
-                    viewGestion.CargarDatos();
                 }
             }
+
+            viewGestion.CargarDatos();
+            this.Close();
         }
     }
 }

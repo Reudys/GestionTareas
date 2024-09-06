@@ -85,7 +85,7 @@ namespace GestionTareas.View
 
         private void btnAñadir(object sender, RoutedEventArgs e)
         {
-            Añadir form = new Añadir();
+            Añadir form = new Añadir(this);
             form.Show();
         }
 

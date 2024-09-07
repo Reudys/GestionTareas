@@ -41,7 +41,7 @@ namespace GestionTareas.View {
     public partial class Gestion : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 58 "..\..\..\View\Gestion.xaml"
+        #line 59 "..\..\..\View\Gestion.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.DataGrid dgv;
         
@@ -94,7 +94,7 @@ namespace GestionTareas.View {
             return;
             case 2:
             
-            #line 25 "..\..\..\View\Gestion.xaml"
+            #line 26 "..\..\..\View\Gestion.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Minimizar);
             
             #line default
@@ -102,7 +102,7 @@ namespace GestionTareas.View {
             return;
             case 3:
             
-            #line 31 "..\..\..\View\Gestion.xaml"
+            #line 32 "..\..\..\View\Gestion.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Cerrar);
             
             #line default
@@ -110,7 +110,7 @@ namespace GestionTareas.View {
             return;
             case 4:
             
-            #line 44 "..\..\..\View\Gestion.xaml"
+            #line 45 "..\..\..\View\Gestion.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.btnAñadir);
             
             #line default
@@ -118,7 +118,7 @@ namespace GestionTareas.View {
             return;
             case 5:
             
-            #line 51 "..\..\..\View\Gestion.xaml"
+            #line 52 "..\..\..\View\Gestion.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.btnEliminar);
             
             #line default
